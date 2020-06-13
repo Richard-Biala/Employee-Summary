@@ -70,7 +70,7 @@ function promptUser() {
         } else if (response.employeeRole === "Intern") {
             theTeam.push(new Intern(response.name, response.id, response.email, response.school))
         } else if (response.employeeRole === "Manager") {
-            theTeam.push(new Intern(response.name, response.id, response.email, response.officeNumber))
+            theTeam.push(new Manager(response.name, response.id, response.email, response.officeNumber))
         }
         if (response.addMore) {
             promptUser();
